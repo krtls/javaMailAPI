@@ -12,8 +12,8 @@ import javax.mail.internet.MimeMessage;
  
 public class SendingEmail {
 	ReadingEmail re =new ReadingEmail();
-	String from = "kurtulusbeylan@gmail.com";
-	String pass = "kurtuluS.3522";
+	String from = "mail@gmail.com";
+	String pass = "PassWord";
 	String to=re.fromEmail; 
 	String host = "smtp.gmail.com";
 	
@@ -42,8 +42,8 @@ public class SendingEmail {
 					 
 		    message.addRecipients(Message.RecipientType.TO, to);
 		
-			message.setSubject("Proje grupları!!!");
-			message.setText("Mesajınız alınmıştır.\n Projenizde başarılar dilerim !!!");
+			message.setSubject("Proje gruplarÃ½!!!");
+			message.setText("MesajÃ½nÃ½z alÃ½nmÃ½Ã¾tÃ½r.\n Projenizde baÃ¾arÃ½lar dilerim !!!");
 			Transport transport = session.getTransport("smtp");
 			transport.connect(host, from, pass);
 			transport.sendMessage(message, message.getAllRecipients());
