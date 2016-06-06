@@ -33,7 +33,7 @@ public class SendingEmail {
 		    props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		    props.put("mail.smtp.socketFactory.fallback", "false");
 		    
-		    GMailAuthenticator auth = new GMailAuthenticator("kurtulusbeylan@gmail.com", "kurtuluS.3522");
+		    GMailAuthenticator auth = new GMailAuthenticator("mail@gmail.com", "PassWord");
 					
 			Session session = Session.getInstance(props, auth);
 			session.setDebug(true);
